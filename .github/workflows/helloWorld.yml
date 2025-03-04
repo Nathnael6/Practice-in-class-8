@@ -1,1 +1,21 @@
+ 
+name: Hello World Workflow
 
+on:
+  push:
+    branches:
+      - main
+      - my-new-branch  # Change this to your actual branch name
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World 1
+        run: echo "Hello World 1"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World 2
+        run: echo "Hello World 2"
